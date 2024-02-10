@@ -1,0 +1,17 @@
+# Brightness
+alt + Left
+    brillo -U 5
+
+alt + Right
+    brillo -A 5
+
+
+# Volume
+alt + Up
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+alt + Down
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+# alt + M
+#     pactl set-sink-mute @DEFAULT_SINK@ toggle

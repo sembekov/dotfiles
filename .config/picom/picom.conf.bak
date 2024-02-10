@@ -1,0 +1,27 @@
+vsync = true;
+
+active-opacity=1
+inactive-opacity = 1
+frame-opacity = 0.7;
+inactive-opacity-override = false;
+
+opacity-rule = [
+	"85:class_g = 'Alacritty' && !focused",
+	"100:class_g = 'Alacritty' && focused",
+	"95:class_g = 'firefox' && !focused",
+	"100:class_g = 'firefox' && focused"
+]
+
+shadow = false;
+
+fading = true;
+fade-delta = 5.0
+# fade-delta = 3.0
+no-fading-openclose = false
+# fade-exclude = [  ];
+
+
+backend = "xrender";
+# backend = "xr_glx_hybrid";
+dithered-present = false;
+

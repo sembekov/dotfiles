@@ -1,0 +1,47 @@
+# Alacritty Configuration File
+#
+# See https://github.com/alacritty/alacritty/wiki/Configuration for more
+# options and documentation.
+#
+# NOTE: This configuration file uses the hex codes defined in your CSS file.
+# Make sure to update the font and other settings as needed.
+
+# Colors (using hex codes)
+colors:
+  # Default colors
+  primary:
+    background: '#090809'
+    foreground: '#dfd9d4'
+
+  # Normal colors
+  normal:
+    black:   '#090809'
+    red:     '#904A3D'
+    green:   '#887771'
+    yellow:  '#978879'
+    blue:    '#7D7F84'
+    magenta: '#A59D9B'
+    cyan:    '#C8B8AA'
+    white:   '#dfd9d4'
+
+  # Bright colors
+  bright:
+    black:   '#9c9794'
+    red:     '#904A3D'
+    green:   '#887771'
+    yellow:  '#978879'
+    blue:    '#7D7F84'
+    magenta: '#A59D9B'
+    cyan:    '#C8B8AA'
+    white:   '#dfd9d4'
+
+# Wallpaper background (using hex code)
+background_image: '/home/akira/.config/wallpapers/fav/anime_white.jpg'
+
+# Font configuration (change this to your preferred font)
+font:
+  size: 14.0
+  family: Monaco, monospace
+
+# Additional Alacritty configurations can be added here as needed.
+
