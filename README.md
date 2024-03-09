@@ -2,7 +2,7 @@
 my setup information
 
 * OS: [Arch Linux](https://archlinux.org/download/)
-* Terminal: [alacritty](https://github.com/alacritty/alacritty)
+* Terminal: [kitty](https://sw.kovidgoyal.net/kitty/)
 * WM: [dwm](https://github.com/sembekov/dwm)
 * Shell: [zsh](https://www.zsh.org/)
 * Compositor: [picom](https://github.com/FT-Labs/picom)
