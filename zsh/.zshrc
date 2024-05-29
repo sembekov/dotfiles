@@ -17,8 +17,6 @@ source $ZSH/oh-my-zsh.sh
 
 # alias 
 alias grep="grep --color=auto"
-alias v="nvim"
-alias vim="nvim"
 # alias open="xdg-open"
 alias open="nemo"
 alias df="df -h"
@@ -26,12 +24,24 @@ alias c="xclip"
 alias p="xclip -o"
 alias py="python"
 alias P="xclip -selection clipboard"
-alias h="history | tail -30"
 alias sxiv="sxiv -a"
+alias icat="kitten icat"
+alias copy="fzf | xargs xclip -selection clipboard"
+alias reload="source ~/.zshrc"
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+export PATH="$PATH:/home/akira/.local/bin"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+source <(fzf --zsh)
+export FZF_DEFAULT_COMMAND='rg --files --hidden --ignore-file ~/.gitignore'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+export FZF_ALT_C_COMMAND='fd --type d --hidden --strip-cwd-prefix'
+export FZF_ALT_C_OPTS="
+  --walker-skip .git,node_modules,target
+  --preview 'tree -C {}'"
+
 source $HOME/build/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
