@@ -39,7 +39,7 @@ source <(fzf --zsh)
 export FZF_DEFAULT_COMMAND='rg --files --hidden --ignore-file ~/.gitignore'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
-export FZF_ALT_C_COMMAND='fd --type d --hidden --strip-cwd-prefix'
+export FZF_ALT_C_COMMAND='fd --type d --hidden --strip-cwd-prefix --ignore-file ~/.gitignore'
 export FZF_ALT_C_OPTS="
   --walker-skip .git,node_modules,target
   --preview 'tree -C {}'"
